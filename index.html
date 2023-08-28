@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encryption vs. Hashing</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>
+    <div class="heading">Encryption vs. Hashing</div>
+    </h1>
+  <p>Encryption and hashing are two different methods of securing data.</p>
+  <p>Encryption is a way of converting data into a form that cannot be read without a special key. This can be used to protect sensitive information, such as passwords or credit card numbers.</p>
+  <p>Hashing is a way of converting data into a unique value that cannot be reversed. This can be used to verify the integrity of data, or to create a unique identifier for something.</p>
+  <p>The main difference between encryption and hashing is that encryption is reversible, while hashing is not. This means that encrypted data can be decrypted with the right key, but hashed data cannot be reversed to reveal the original input.</p>
+  
+  <img id="img"  src="https://shorturl.at/almqx" alt="Image"/>
+
+  <p>Here is a table summarizing the key differences between encryption and hashing:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Encryption</th>
+        <th>Hashing</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Defination</td>
+            <td>It is the technique of securely encrypting data such that only the authorised user who has the key or password can get the original data; everything else is garbage.</td>
+            <td>It is the process of converting data into a shorter fixed value known as the key, which is then used to represent the original data.</td>
+        </tr>
+        <tr>
+            <td>Purpose</td>
+            <td>Encryption's objective is to modify data in order to keep it secret from others.</td>
+            <td>Hashing is used to index and retrieve data from a database. The technique is quite fast.</td>
+        </tr>
+        <tr>
+            <td>Secure</td>
+            <td>It is less secure in comparison to hashing.</td>
+            <td>It is more secure in comparison to encryption.</td>
+        </tr>
+        <tr>
+            <td>Reverse Process</td>
+            <td>We can easily retrieve the original data if we know the encryption key and algorithm.</td>
+            <td>The hash code or key cannot be restored to its original state using any means. It can only be mapped, and the hash code is checked; if the hash code matches, the information is the same; if it does not, it is not. The original data is unrecoverable.</td>
+        </tr>
+      <tr>
+        <td>Creation of file</td>
+        <td>For each piece of data, it will always produce a new key.</td>
+        <td>In general, it attempts to generate a new key for each piece of information passed to the hash function, but in rare cases, it may generate the same key, which is known as a collision.</td>
+      </tr>
+      <tr>
+        <td>key management</td>
+        <td>To encrypt and decode data, encryption requires a secret key or algorithm.</td>
+        <td>To generate a hash value, no secret key or algorithm is required.</td>
+      </tr>
+        <tr>
+          <td>Output</td>
+          <td>the output of an encryption algorithm is ciphertext of the same size or larger than the original data</td>
+          <td>The output of a hashing algorithm is a fixed-size hash value</td>
+        </tr>
+        <tr>
+          <td>Creation of file</td>
+          <td>It will always generate a new key for each information.</td>
+          <td>Generally, it tries to generate a new key for each information passed to the hash function but on rare occasions, it might generate the same key popularly known as a collision.</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>RSA, AES and Blowfish</td>
+          <td>MD5, SHA256</td>
+        </tr>      
+    </tbody>
+  </table>
+
+  <p>Here are some examples of how encryption and hashing are used:</p>
+
+  <ul>
+    <li>Encryption is used to protect passwords and credit card numbers when they are stored on a server.</li>
+    <li>Hashing is used to verify the integrity of files, such as software downloads.</li>
+    <li>Hashing is also used to create unique identifiers for things like website login tokens and social media user accounts.</li>
+  </ul>
+  
+  <p>I hope this page has helped you to understand the difference between encryption and hashing.</p>
+
+  <a href="https://www.geeksforgeeks.org/difference-between-hashing-and-encryption/"><button id="Button">For More information</button></a>
+</body>
+</html>
